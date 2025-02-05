@@ -64,15 +64,15 @@ const WritePage = ({ user }: { user: Session["user"] | null }) => {
             <label htmlFor="content" className="block text-sm font-medium text-gray-700">
               내용
             </label>
-            <Editor />
-            {/* <textarea
+            {/* <Editor /> */}
+            <textarea
               ref={contentRef}
               id="content"
               onChange={handleContentChange}
               className="mt-1 p-2 w-full border border-gray-300 rounded-md resize-none overflow-y-hidden"
               rows={6}
               placeholder="게시글 내용을 입력하세요"
-            /> */}
+            />
           </div>
           <div className="w-full flex justify-end mt-8">
             <button onClick={onWriteComplete} className="text-white bg-blue-900 px-4 py-2 rounded-md hover:bg-blue-800">
